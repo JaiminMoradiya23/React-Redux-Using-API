@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PostsComp from './Components/PostsComp';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<div className='App'>
+			<h1 style={{ marginBottom: '0px' }}>React Redux Practice</h1>
+			<p className='subtitle'>
+				-- Take a look at the code for better understanding of{' '}
+				<b>how redux works</b> --
+			</p>
+			<PostsComp />
+			<p className='subtitle'>
+				-- This data is being fetched using jsonplaceholder api --
+			</p>
+		</div>
+	);
+};
 
 export default App;
